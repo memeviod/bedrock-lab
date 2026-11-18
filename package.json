@@ -1,0 +1,1 @@
+{"name":"bedrock-lab","version":"1.0.0","description":"Catálogo de addons y texturas para Minecraft Bedrock","scripts":{"start":"node server.js"},"engines":{"node":">=18"}}
