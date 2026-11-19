@@ -1,7 +1,9 @@
 # Bedrock Lab
 
-Catálogo de addons, texturas y mapas de Minecraft Bedrock: CurseForge, MCPEDL y ModBay. El servidor usa la API de CurseForge y lee las páginas públicas de los otros sitios.
+**Creado por MEMEVIOD.** Proyecto desarrollado con ayuda de Zapia.
 
-Para ejecutarlo, usa Node.js 18 o superior, configura la variable de entorno `CURSEFORGE_API_KEY` y ejecuta `npm start`. La clave se almacena como variable de entorno, nunca en el repositorio.
+Catálogo de addons, texturas, mapas y otros contenidos para Minecraft Bedrock: CurseForge, MCPEDL, ModBay y McPack.cc. La app Android muestra este catálogo y añade su propia pestaña de descargas.
 
-Las descargas de MCPEDL y ModBay abren la publicación original. Su búsqueda filtra las páginas cargadas y el ordenamiento se aplica solamente a CurseForge. Los contenidos pertenecen a sus creadores.
+Para ejecutar el servidor, usa Node.js 18 o superior, configura la variable de entorno `CURSEFORGE_API_KEY` y ejecuta `npm start`. La clave se almacena como variable de entorno, nunca en el repositorio.
+
+Las fichas y descargas enlazan a sus publicaciones originales cuando corresponde. Los contenidos pertenecen a sus respectivos creadores; comprueba la compatibilidad antes de instalar.
