@@ -2,13 +2,11 @@ name: Build Bedrock Lab APK
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'bedrock-lab-android-source.zip'
-      - '.github/workflows/android-apk.yml'
+  release:
+    types: [published]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -24,16 +22,22 @@ jobs:
       - name: Install Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.9'
+          gradle-version: '8.11.1'
       - name: Unpack Android source
         run: unzip bedrock-lab-android-source.zip -d android-source
-      - name: Build installable debug APK
+      - name: Build installable release APK
         working-directory: android-source/android
-        run: gradle --no-daemon assembleDebug
+        run: gradle --no-daemon assembleRelease
+      - name: Upload direct APK to GitHub Release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: android-source/android/app/build/outputs/apk/release/app-release.apk
+          fail_on_unmatched_files: true
       - name: Save APK as workflow artifact
         uses: actions/upload-artifact@v4
         with:
           name: Bedrock-Lab-APK
-          path: android-source/android/app/build/outputs/apk/debug/app-debug.apk
+          path: android-source/android/app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
