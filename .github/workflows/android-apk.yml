@@ -1,0 +1,39 @@
+name: Build Bedrock Lab APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'bedrock-lab-android-source.zip'
+      - '.github/workflows/android-apk.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get source
+        uses: actions/checkout@v4
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Unpack Android source
+        run: unzip bedrock-lab-android-source.zip -d android-source
+      - name: Build installable debug APK
+        working-directory: android-source/android
+        run: gradle --no-daemon assembleDebug
+      - name: Save APK as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bedrock-Lab-APK
+          path: android-source/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 14
