@@ -1,166 +1,103 @@
 # Bedrock Lab
-🧱 Bedrock Lab
 
-<p align="center">
-  <img src="brand.webp" alt="Bedrock Lab Logo" width="160">
-</p><h3 align="center">THE BEDROCK CONTENT HUB</h3><p align="center">
-  <strong>Discover. Explore. Download.</strong>
-  <br>
-  Your Minecraft Bedrock content, brought together in one place.
-</p><p align="center">
-  <a href="https://github.com/memeviod/bedrock-lab/stargazers"><img src="https://img.shields.io/github/stars/memeviod/bedrock-lab?style=for-the-badge&color=8b5cf6" alt="Stars"></a>
-  <a href="https://github.com/memeviod/bedrock-lab/network/members"><img src="https://img.shields.io/github/forks/memeviod/bedrock-lab?style=for-the-badge&color=6366f1" alt="Forks"></a>
-  <a href="https://github.com/memeviod/bedrock-lab/releases"><img src="https://img.shields.io/github/v/release/memeviod/bedrock-lab?style=for-the-badge&color=7c3aed" alt="Latest Release"></a>
-  <img src="https://img.shields.io/badge/Platform-Minecraft%20Bedrock-22c55e?style=for-the-badge" alt="Minecraft Bedrock">
-</p><p align="center">
-  <a href="https://bedrock-lab-memeviod.onrender.com/"><strong>🌐 VISIT WEBSITE</strong></a>
-  &nbsp; • &nbsp;
-  <a href="https://github.com/memeviod/bedrock-lab/releases"><strong>📦 DOWNLOAD</strong></a>
-  &nbsp; • &nbsp;
-  <a href="https://github.com/memeviod/bedrock-lab/issues"><strong>REPORT AN ISSUE</strong></a>
-</p>---
+**Bedrock Lab** is a lightweight discovery catalog for Minecraft Bedrock community content. It brings together search results and links to the original publications while keeping each creator's and platform's content attribution intact.
 
-01 — Overview
+- **Website:** <https://bedrock-lab-memeviod.onrender.com/>
+- **Repository:** <https://github.com/memeviod/bedrock-lab>
+- **Android releases:** <https://github.com/memeviod/bedrock-lab/releases>
+- **Issues:** <https://github.com/memeviod/bedrock-lab/issues>
 
-Bedrock Lab is a Minecraft Bedrock content aggregation project that brings together resources from multiple external platforms through a unified interface.
+## Content sources
 
-Its purpose is to simplify content discovery by providing a centralized place to explore different types of community-created resources without having to navigate each source independently.
+Bedrock Lab currently integrates four external sources:
 
-Available through a web interface and an Android application, Bedrock Lab combines accessibility, organization and a dedicated experience for Minecraft Bedrock players.
+| Source | How the catalog uses it |
+| --- | --- |
+| [CurseForge](https://www.curseforge.com/minecraft-bedrock) | API search, available metadata, and eligible direct file downloads. Requires an API key. |
+| [MCPEDL](https://mcpedl.com/) | Public catalog/API data and links to original publications. |
+| [ModBay](https://modbay.org/) | Public catalog pages and links to original publications. |
+| [McPack.cc](https://www.mcpack.cc/) | Public catalog pages when available; the app can fall back to a local index, whose capture date is shown. |
 
-02 — Content ecosystem
+The availability of content, versions, download links, dates and statistics depends on the relevant source. Bedrock Lab does not guarantee compatibility or availability. Read the original publication before installing a pack.
 
-Bedrock Lab connects with several established Minecraft content platforms.
+## What the site includes
 
-Source| Platform
-"CurseForge" (https://www.curseforge.com/minecraft-bedrock)| Addons and content packs
-"MCPEDL" (https://mcpedl.com/)| Addons, maps and textures
-"ModBay" (https://modbay.org/)| Mods and community content
-"McPack.cc" (https://mcpack.cc/)| Minecraft Bedrock packs
+- Search, pagination, category/source/version filters, and sorting by the data currently available.
+- A responsive catalog with item details and links back to original sources.
+- A closing “Visita GitHub” section that describes the repository and links directly to the project.
+- Locally stored favorites and recent items in the user's browser; no Bedrock Lab account is needed for these local lists.
+- A Java-resource-pack conversion link operated by McPack.cc, and an installation guide.
+- An Android app distributed through GitHub Releases.
 
-Content categories
+Favorites and recent IDs are stored locally in the browser. They are not synchronized between devices or accounts. The catalog continues to use the current source integrations; no ranking or publication date is invented when a source does not provide one.
 
-- Addons: Extend Minecraft Bedrock with community-created content.
-- Texture Packs: Discover visual modifications and resource packs.
-- Maps: Explore custom worlds and environments.
-- Skins: Find character appearances.
-- Other resources: Additional content available through integrated sources.
+## Project layout
 
-Content availability, ownership and updates are determined by the respective external platforms and creators.
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Main web interface and client-side behavior. |
+| `server.js` | Lightweight Node.js HTTP server, API integrations, cache, downloads, and static assets. |
+| `package.json` | Start script and Node.js runtime declaration. |
+| `manifest.json`, `icon-192.png`, `icon-512.png`, `brand.webp` | PWA metadata and project visuals. |
+| `mcpack-index.json` | Local fallback index for McPack.cc when its live catalog cannot be reached. |
+| `bedrock-lab-android-source.zip` | Android app source archive used by the repository's build workflow. |
+| `.github/workflows/android-apk.yml` | Android GitHub Actions workflow. |
 
-03 — Platforms
+## Run locally
 
-Web application
+Requirements: Node.js 18 or later, Git, and a CurseForge API key for CurseForge results.
 
-Access Bedrock Lab directly from your browser.
-
-<p align="center">
-  <a href="https://bedrock-lab-memeviod.onrender.com/">
-    <strong>OPEN BEDROCK LAB →</strong>
-  </a>
-</p>Android application
-
-The Android version provides access to the catalog through a dedicated mobile experience, including its own downloads section.
-
-<p align="center">
-  <a href="https://github.com/memeviod/bedrock-lab/releases">
-    <strong>EXPLORE ANDROID RELEASES →</strong>
-  </a>
-</p>04 — Technology
-
-The project uses a lightweight Node.js server architecture.
-
-Component| Technology
-Server runtime| Node.js
-Minimum Node.js version| 18
-Server entry point| "server.js"
-Main web interface| "index.html"
-Content integration| CurseForge API
-Application metadata| JSON
-
-05 — Installation & Development
-
-Want to run your own local instance?
-
-Requirements
-
-- Node.js 18 or later.
-- A valid CurseForge API key.
-- Git.
-
-Clone the repository
-
+```sh
 git clone https://github.com/memeviod/bedrock-lab.git
 cd bedrock-lab
+```
 
-Configure the API key
+Set the environment variable `CURSEFORGE_API_KEY` in your local shell or deployment environment. Do not commit the key or paste it into public issues.
 
-Set the "CURSEFORGE_API_KEY" environment variable.
+Linux/macOS:
 
-Linux / macOS:
-
+```sh
 export CURSEFORGE_API_KEY="YOUR_API_KEY"
+npm start
+```
 
 Windows PowerShell:
 
+```powershell
 $env:CURSEFORGE_API_KEY="YOUR_API_KEY"
-
-Start the server
-
 npm start
+```
 
-The server will start using the repository's configured start script.
+The server listens on the port provided by `PORT`, or port `3000` when `PORT` is not set. The configured `npm start` script runs `node server.js`.
 
-Security notice: Never publish API keys, credentials or other private configuration values in the repository.
+## API routes
 
-06 — External content & attribution
+| Route | Purpose |
+| --- | --- |
+| `GET /api/search` | Search the configured catalog sources, with query, page and filter parameters. |
+| `GET /api/details?id=...` | Request the detail data available for a catalog item. |
+| `GET /api/download?mod=...&file=...` | Download an eligible CurseForge file; otherwise the source's publication page is used. |
+| `GET /manifest.json` | Serve the web-app manifest. |
 
-Bedrock Lab acts as an aggregation and discovery interface.
+Source websites may be unavailable, change their pages, limit access, or provide incomplete metadata. The interface reports source failures where possible and continues with successful sources.
 
-It does not claim ownership of third-party addons, maps, textures, skins or other resources displayed through its integrations.
+## Deployment, performance and security notes
 
-All external content remains the property of its respective creators and publishers. Original sources should be consulted for downloads, permissions, updates and compatibility information.
+- The app uses built-in Node.js APIs and does not require a heavy framework.
+- Successful API responses use a short cache policy; CurseForge API and public catalog-page responses are also cached in memory by the server. The cache is instance-local and resets when the process restarts.
+- Search remains paginated; images in the interface are lazy-loaded. The client debounces search input and aborts obsolete browser requests. The server also cancels upstream work when the client disconnects, applies upstream timeouts, bounds search pages and limits simultaneous API requests.
+- The HTTP server sets content-type, framing, referrer and permissions headers. A strict Content Security Policy is not set because the current page includes inline code and displays images from external catalog providers; review before changing this architecture.
+- Never put API keys, signing keys or passwords in the repository. Keep them in protected deployment secrets/environment settings.
+- Do not change the external integrations, download flow, Render settings, or Android signing workflow without testing the effects.
 
-07 — Releases
+## External content and attribution
 
-Bedrock Lab has publicly published releases containing project versions and associated files.
+Bedrock Lab is an aggregation and discovery interface; it does not claim ownership of third-party addons, maps, textures, skins, or other resources. Those remain the property of their respective creators and publishers. Consult original source pages for permissions, current downloads, updates, and compatibility.
 
-Explore the release history to find available versions and updates.
+## Contributing and reporting issues
 
-<p align="center">
-  <a href="https://github.com/memeviod/bedrock-lab/releases">
-    <strong>VIEW ALL RELEASES →</strong>
-  </a>
-</p>08 — Credits & Development
+Please report bugs or source integration changes through [GitHub Issues](https://github.com/memeviod/bedrock-lab/issues). Include the affected page/source and steps to reproduce, but never include API keys, passwords, private signing material, or personal tokens.
 
-Bedrock Lab is a project created and directed by MEMEVIOD.
+## Credits
 
-A special recognition goes to Zapia, which contributed more than 80% of the project's development work.
-
-Its contribution was fundamental to the implementation and construction of the project.
-
-Contributor| Contribution
-MEMEVIOD| Project creator, direction and development
-Zapia| Main development contribution — over 80% of the work
-
-This project would not be what it is today without that contribution.
-
----
-
-<p align="center">
-  <img src="brand.webp" alt="Bedrock Lab" width="90">
-  <br>
-  <strong>BEDROCK LAB</strong>
-  <br>
-  <sub>A unified gateway to the Minecraft Bedrock content ecosystem.</sub>
-  <br><br>
-  Created by <a href="https://github.com/memeviod">MEMEVIOD</a>
-</p>
-**Creado por MEMEVIOD.** Proyecto desarrollado con ayuda de Zapia.
-
-Catálogo de addons, texturas, mapas y otros contenidos para Minecraft Bedrock: CurseForge, MCPEDL, ModBay y McPack.cc. La app Android muestra este catálogo y añade su propia pestaña de descargas.
-
-Para ejecutar el servidor, usa Node.js 18 o superior, configura la variable de entorno `CURSEFORGE_API_KEY` y ejecuta `npm start`. La clave se almacena como variable de entorno, nunca en el repositorio.
-
-Las fichas y descargas enlazan a sus publicaciones originales cuando corresponde. Los contenidos pertenecen a sus respectivos creadores; comprueba la compatibilidad antes de instalar.
-https://bedrock-lab-memeviod.onrender.com/
+Created by **MEMEVIOD**. Project developed with help from **Zapia**.
