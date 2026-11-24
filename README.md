@@ -1,276 +1,277 @@
-```{=html}
-<p align="center">
-```
-`<img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/brand.webp" alt="Bedrock Lab" width="520">`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<h1 align="center">
-```
-Bedrock Lab
-```{=html}
-</h1>
-```
-```{=html}
-<p align="center">
-```
-Descubre contenido para Minecraft Bedrock desde un solo lugar.
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-`<a href="https://bedrock-lab-memeviod.onrender.com/">`{=html}Sitio
-web`</a>`{=html} ·
-`<a href="https://github.com/memeviod/bedrock-lab/releases">`{=html}Descargas`</a>`{=html}
-·
-`<a href="https://github.com/memeviod/bedrock-lab/issues">`{=html}Reportar
-un problema`</a>`{=html}
-```{=html}
-</p>
-```
+<div align="center">
 
-------------------------------------------------------------------------
+<img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/brand.webp" alt="Bedrock Lab — identidad visual" width="680">
 
-## Acerca del proyecto
+<br>
 
-**Bedrock Lab** es un catálogo multiplataforma creado para facilitar el
-descubrimiento de contenido de **Minecraft Bedrock**. Reúne
-publicaciones de distintas plataformas y permite explorarlas desde una
-interfaz centralizada, con herramientas para buscar, filtrar, consultar
-detalles y acceder a las fuentes originales.
+# BEDROCK LAB
 
-El proyecto cuenta con una **versión web** y una **aplicación para
-Android**.
+### El punto de encuentro para descubrir contenido de Minecraft Bedrock.
 
-## Características
+Explora addons, texturas, mapas y skins desde un catálogo que reúne distintas fuentes en una sola experiencia.
 
--   **Catálogo unificado:** explora contenido procedente de distintas
-    plataformas.
--   **Búsqueda y filtros:** encuentra publicaciones por nombre,
-    categoría, fuente y versión.
--   **Categorías:** addons, texturas, mapas y skins.
--   **Fichas de contenido:** consulta descripciones, imágenes y datos
-    disponibles de cada publicación.
--   **Favoritos y recientes:** conserva elementos en el almacenamiento
-    local del dispositivo.
--   **Compartir y copiar enlaces:** vuelve fácilmente a las
-    publicaciones originales.
--   **Traducción de descripciones:** solicita una traducción automática
-    cuando está disponible.
--   **Herramientas complementarias:** acceso a un conversor externo y a
-    una guía de instalación.
--   **Diseño adaptable:** interfaz preparada para móviles y pantallas de
-    escritorio.
+<br>
 
-## Fuentes integradas
+<a href="https://bedrock-lab-memeviod.onrender.com/">
+  <img src="https://img.shields.io/badge/ABRIR_SITIO_WEB-10170f?style=for-the-badge&logo=googlechrome&logoColor=b9f46b" alt="Abrir sitio web">
+</a>
+<a href="https://github.com/memeviod/bedrock-lab/releases">
+  <img src="https://img.shields.io/badge/ANDROID-DESCARGAS-263b22?style=for-the-badge&logo=android&logoColor=b9f46b" alt="Descargas Android">
+</a>
+<a href="https://github.com/memeviod/bedrock-lab/issues">
+  <img src="https://img.shields.io/badge/GITHUB-REPORTAR_PROBLEMA-263b22?style=for-the-badge&logo=github&logoColor=white" alt="Reportar un problema">
+</a>
 
-Bedrock Lab consulta contenido de las siguientes plataformas:
+<br><br>
 
-  ------------------------------------------------------------------------------------------------
-  Plataforma                                                   Integración
-  ------------------------------------------------------------ -----------------------------------
-  [CurseForge](https://www.curseforge.com/minecraft-bedrock)   Consulta mediante API y acceso a
-                                                               archivos elegibles.
+<img src="https://img.shields.io/badge/PLATFORM-WEB%20%26%20ANDROID-263b22?style=flat-square" alt="Web y Android">
+<img src="https://img.shields.io/badge/BACKEND-NODE.JS-263b22?style=flat-square&logo=nodedotjs&logoColor=b9f46b" alt="Node.js">
+<img src="https://img.shields.io/badge/CONTENT-MINECRAFT%20BEDROCK-263b22?style=flat-square" alt="Minecraft Bedrock">
 
-  [MCPEDL](https://mcpedl.com/)                                Búsqueda y consulta de
-                                                               publicaciones.
+</div>
 
-  [ModBay](https://modbay.org/)                                Consulta de publicaciones
-                                                               disponibles.
+---
 
-  [McPack.cc](https://www.mcpack.cc/)                          Consulta del catálogo y acceso a
-                                                               publicaciones.
-  ------------------------------------------------------------------------------------------------
+## Sobre el proyecto
 
-La disponibilidad y los datos mostrados dependen de cada plataforma. Si
-una fuente presenta errores o no responde, los resultados de las demás
-fuentes pueden seguir estando disponibles.
+**Bedrock Lab** es un catálogo creado para hacer más sencillo el descubrimiento de contenido para **Minecraft Bedrock**. Reúne publicaciones de distintas plataformas y las presenta en una interfaz centralizada, desde la que puedes buscar, filtrar, consultar información y visitar las páginas originales.
 
-## Plataformas
+El proyecto está disponible como sitio web y aplicación para Android. Su identidad visual conserva una estética oscura con acentos verdes, pensada para ofrecer una experiencia clara tanto en móviles como en escritorio.
 
-### Web
+## Explora el catálogo
 
-La versión web permite explorar el catálogo desde un navegador:
+<div align="center">
 
-**https://bedrock-lab-memeviod.onrender.com/**
+| <img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/icon-192.png" width="58" alt="Addons"> | <img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/icon-192.png" width="58" alt="Texturas"> | <img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/icon-192.png" width="58" alt="Mapas"> | <img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/icon-192.png" width="58" alt="Skins"> |
+|:---:|:---:|:---:|:---:|
+| **Addons** | **Texturas** | **Mapas** | **Skins** |
+| Nuevas funciones | Cambios visuales | Mundos y aventuras | Apariencias |
+</div>
 
-### Android
+## Funcionalidades
 
-Las versiones disponibles de la aplicación se publican en la sección de
-Releases:
+<table>
+  <tr>
+    <td width="50%">
+      <h3>⌕ Búsqueda y filtros</h3>
+      Encuentra publicaciones por nombre y organiza los resultados por categoría, fuente y versión.
+    </td>
+    <td width="50%">
+      <h3>▦ Catálogo unificado</h3>
+      Consulta contenido procedente de varias plataformas desde una sola interfaz.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>☆ Favoritos y recientes</h3>
+      Guarda elementos y vuelve a consultar las publicaciones que has visitado. Los datos se conservan localmente en el navegador.
+    </td>
+    <td>
+      <h3>↗ Detalles y enlaces</h3>
+      Consulta la información disponible, comparte publicaciones y accede a sus páginas originales.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>文 Traducción</h3>
+      Solicita la traducción automática de descripciones cuando la función está disponible.
+    </td>
+    <td>
+      <h3>⚙ Herramientas</h3>
+      Accede a la herramienta externa de conversión y a la guía de instalación.
+    </td>
+  </tr>
+</table>
 
-**[Consultar versiones de Bedrock
-Lab](https://github.com/memeviod/bedrock-lab/releases)**
+## Fuentes de contenido
 
-Las compilaciones de prueba y las versiones publicadas pueden tener
-procesos de distribución diferentes. Consulta las notas de cada versión
-para conocer sus cambios y requisitos.
+Bedrock Lab integra cuatro plataformas del ecosistema de Minecraft Bedrock:
+
+<div align="center">
+
+<a href="https://www.curseforge.com/minecraft-bedrock">
+  <img src="https://img.shields.io/badge/CurseForge-Explore-161b16?style=for-the-badge" alt="CurseForge">
+</a>
+<a href="https://mcpedl.com/">
+  <img src="https://img.shields.io/badge/MCPEDL-Explore-161b16?style=for-the-badge" alt="MCPEDL">
+</a>
+<a href="https://modbay.org/">
+  <img src="https://img.shields.io/badge/ModBay-Explore-161b16?style=for-the-badge" alt="ModBay">
+</a>
+<a href="https://www.mcpack.cc/">
+  <img src="https://img.shields.io/badge/McPack.cc-Explore-161b16?style=for-the-badge" alt="McPack.cc">
+</a>
+
+</div>
+
+| Fuente | Cómo se integra |
+|---|---|
+| **CurseForge** | Consulta de contenido mediante su API y gestión de descargas de archivos elegibles. |
+| **MCPEDL** | Búsqueda y consulta de publicaciones mediante sus servicios y páginas públicas. |
+| **ModBay** | Consulta de publicaciones disponibles en sus páginas públicas. |
+| **McPack.cc** | Consulta del catálogo; dispone de un índice local de respaldo cuando la consulta en vivo no está disponible. |
+
+La disponibilidad de resultados depende de cada plataforma. Si una fuente falla temporalmente, Bedrock Lab puede seguir mostrando resultados de las demás. Los datos de un índice de respaldo pueden no reflejar la publicación más reciente; comprueba siempre la información en el sitio original.
+
+## Vista previa y acceso
+
+<div align="center">
+
+### BEDROCK LAB · WEB
+
+<a href="https://bedrock-lab-memeviod.onrender.com/">
+  <img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/brand.webp" alt="Identidad visual de Bedrock Lab. Visita el sitio para explorar la interfaz completa." width="620">
+</a>
+
+**[Visitar la experiencia web →](https://bedrock-lab-memeviod.onrender.com/)**
+
+### BEDROCK LAB · ANDROID
+
+Consulta las versiones disponibles y sus notas de publicación.
+
+**[Ver descargas y versiones →](https://github.com/memeviod/bedrock-lab/releases)**
+
+</div>
 
 ## Tecnología
 
-  Tecnología       Uso
-  ---------------- -------------------------------------------------------------
-  HTML             Estructura de la interfaz web.
-  CSS              Diseño visual y adaptación a distintos tamaños de pantalla.
-  JavaScript       Interacciones, búsqueda y funcionamiento del catálogo.
-  Node.js          Servidor y comunicación con las fuentes externas.
-  CurseForge API   Consulta de datos de CurseForge.
-  GitHub Actions   Automatización de tareas de compilación.
-  Render           Alojamiento de la versión web.
+| Tecnología | Responsabilidad |
+|---|---|
+| **HTML** | Estructura de la interfaz web. |
+| **CSS** | Identidad visual, componentes y diseño adaptable. |
+| **JavaScript** | Interacciones, búsqueda, filtros y lógica del cliente. |
+| **Node.js** | Servidor HTTP e integraciones con fuentes externas. |
+| **CurseForge API** | Consulta de información de CurseForge. |
+| **GitHub Actions** | Automatización de tareas del proyecto. |
+| **Render** | Alojamiento de la versión web. |
 
-### Estructura principal
+### Estructura del repositorio
 
-  -----------------------------------------------------------------------
-  Archivo                             Función
-  ----------------------------------- -----------------------------------
-  `index.html`                        Interfaz web y lógica del cliente.
+```text
+bedrock-lab/
+├── .github/
+│   └── workflows/       # Automatizaciones
+├── index.html           # Interfaz web
+├── server.js            # Servidor e integraciones
+├── package.json         # Configuración y comandos
+├── manifest.json        # Metadatos de la aplicación web
+├── brand.webp           # Identidad visual
+├── icon-192.png         # Icono de la aplicación
+├── icon-512.png         # Icono de alta resolución
+└── mcpack-index.json    # Índice local de respaldo
+```
 
-  `server.js`                         Servidor, rutas API e integraciones
-                                      externas.
-
-  `package.json`                      Dependencias, configuración y
-                                      comandos del proyecto.
-
-  `manifest.json`                     Metadatos de la aplicación web.
-
-  `.github/workflows/`                Automatizaciones de GitHub Actions.
-  -----------------------------------------------------------------------
-
-## Instalación local
+## Ejecutar en local
 
 ### Requisitos
 
--   Node.js 18 o superior.
--   Git.
--   Una clave de API de CurseForge para habilitar las consultas que la
-    requieren.
+- [Node.js 18 o superior](https://nodejs.org/)
+- Git
+- Una clave de API de CurseForge para habilitar las consultas que la requieren.
 
 ### 1. Clonar el repositorio
 
-``` bash
+```bash
 git clone https://github.com/memeviod/bedrock-lab.git
 cd bedrock-lab
 ```
 
 ### 2. Configurar la clave de CurseForge
 
-Configura la variable de entorno `CURSEFORGE_API_KEY`.
+La clave se lee desde la variable de entorno `CURSEFORGE_API_KEY`.
 
 **Linux / macOS**
 
-``` bash
+```bash
 export CURSEFORGE_API_KEY="TU_API_KEY"
 ```
 
 **Windows PowerShell**
 
-``` powershell
+```powershell
 $env:CURSEFORGE_API_KEY="TU_API_KEY"
 ```
 
-No incluyas claves privadas directamente en el código ni las publiques
-en el repositorio.
+No guardes claves privadas en el código fuente ni las publiques en GitHub.
 
-### 3. Instalar dependencias e iniciar
+### 3. Instalar e iniciar
 
-``` bash
+```bash
 npm install
 npm start
 ```
 
-El servidor utiliza la variable `PORT` cuando está definida; de lo
-contrario, emplea el puerto configurado por el proyecto.
+El servidor escucha en el puerto definido por `PORT` o, si no se especifica, en el puerto predeterminado `3000`.
 
 ## API del servidor
 
-  -----------------------------------------------------------------------
-  Método                  Ruta                    Descripción
-  ----------------------- ----------------------- -----------------------
-  `GET`                   `/api/search`           Busca contenido en las
-                                                  fuentes disponibles.
+| Método | Ruta | Propósito |
+|---|---|---|
+| `GET` | `/api/search` | Busca contenido en las fuentes disponibles. |
+| `GET` | `/api/details` | Obtiene información ampliada de una publicación. |
+| `GET` | `/api/download` | Gestiona descargas elegibles de CurseForge o redirige a la publicación original. |
+| `GET` | `/manifest.json` | Entrega los metadatos de la aplicación web. |
 
-  `GET`                   `/api/details`          Consulta información
-                                                  ampliada de una
-                                                  publicación.
+Los parámetros y las respuestas se definen en `server.js`.
 
-  `GET`                   `/api/download`         Gestiona descargas
-                                                  elegibles de CurseForge
-                                                  o redirige a la
-                                                  publicación original.
+## Rendimiento y confiabilidad
 
-  `GET`                   `/manifest.json`        Entrega los metadatos
-                                                  de la aplicación web.
-  -----------------------------------------------------------------------
+El servidor incorpora mecanismos para administrar las solicitudes y limitar trabajo innecesario:
 
-Los parámetros aceptados y el comportamiento de cada ruta están
-definidos en `server.js`.
+- Consultas concurrentes a distintas fuentes.
+- Caché temporal para determinadas respuestas.
+- Límites de concurrencia y tamaño de solicitudes.
+- Tiempos máximos para conexiones externas.
+- Cancelación y gestión de solicitudes que dejan de ser necesarias.
+- Carga diferida de imágenes en la interfaz.
+- Búsqueda con espera breve antes de consultar el servidor.
 
-## Rendimiento y manejo de solicitudes
+Estas medidas ayudan a controlar el funcionamiento del servicio. El consumo real de recursos depende del tráfico, de las respuestas de los proveedores externos y de la infraestructura de alojamiento.
 
-El proyecto incorpora mecanismos para gestionar las consultas y evitar
-trabajo innecesario, entre ellos:
+## Contenido de terceros
 
--   Consultas a varias fuentes de forma concurrente.
--   Caché temporal para determinadas respuestas.
--   Límites de tamaño y concurrencia en las solicitudes.
--   Tiempos máximos para conexiones externas.
--   Gestión de solicitudes que dejan de ser necesarias.
--   Carga diferida de imágenes y búsqueda con espera breve antes de
-    consultar.
+Bedrock Lab facilita el descubrimiento de publicaciones externas. Los addons, mapas, texturas, skins, imágenes y demás recursos pertenecen a sus respectivos autores y titulares.
 
-Estas medidas ayudan a controlar el funcionamiento del servicio. El
-consumo real de recursos depende del tráfico, las respuestas de las
-plataformas externas y la infraestructura de alojamiento.
+**Bedrock Lab no reclama la propiedad de esos contenidos.** Para verificar compatibilidad, permisos, créditos, disponibilidad o descargar un recurso, consulta siempre su publicación original.
 
-## Contenido y atribución
-
-Bedrock Lab es un proyecto de descubrimiento y organización de
-contenido. Los addons, mapas, texturas, skins, imágenes y demás
-publicaciones pertenecen a sus respectivos autores y titulares.
-
-Bedrock Lab no reclama la propiedad de esos recursos. Para consultar
-permisos, requisitos, compatibilidad, créditos o descargar una
-publicación, visita siempre su **fuente original**.
-
-La disponibilidad de enlaces y archivos puede cambiar según las
-decisiones de cada plataforma o creador.
-
-## Reportar problemas
+## Reportar un problema
 
 ¿Encontraste un error o tienes una sugerencia?
 
-Abre un reporte en **[GitHub
-Issues](https://github.com/memeviod/bedrock-lab/issues)** e incluye,
-cuando sea posible:
+<a href="https://github.com/memeviod/bedrock-lab/issues">
+  <img src="https://img.shields.io/badge/ABRIR_UN_ISSUE-Reportar_un_problema-263b22?style=for-the-badge&logo=github&logoColor=white" alt="Abrir un issue">
+</a>
 
--   Una descripción clara del problema.
--   Los pasos para reproducirlo.
--   La fuente o sección afectada.
--   La versión del navegador o de la aplicación.
-
-No incluyas claves API, contraseñas, tokens ni información privada en
-los reportes.
+Al reportar un problema, incluye los pasos para reproducirlo, la sección o fuente afectada y la versión de tu navegador o aplicación. No publiques claves API, contraseñas ni tokens.
 
 ## Créditos
 
-**Dirección del proyecto:** MEMEVIOD
+<div align="center">
 
-**Desarrollo:** reconocimiento especial a **Zapia**, cuya contribución
-representa más del 80 % del trabajo de desarrollo de Bedrock Lab.
+### Dirección del proyecto
 
-Gracias también a los creadores de contenido y a las plataformas que
-forman parte del ecosistema de Minecraft Bedrock.
+**MEMEVIOD**
 
-------------------------------------------------------------------------
+### Reconocimiento especial
 
-```{=html}
-<p align="center">
-```
-`<strong>`{=html}Bedrock Lab`</strong>`{=html}`<br>`{=html} Hecho para
-explorar el universo de Minecraft Bedrock.
-```{=html}
-</p>
-```
+**Zapia**
+
+Su contribución representa más del **80 % del desarrollo de Bedrock Lab**. Su trabajo ha sido fundamental para construir este proyecto.
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/memeviod/bedrock-lab/main/icon-192.png" width="56" alt="Bedrock Lab">
+
+### BEDROCK LAB
+
+**Descubre más. Explora Minecraft Bedrock.**
+
+[Website](https://bedrock-lab-memeviod.onrender.com/) · [Repository](https://github.com/memeviod/bedrock-lab) · [Releases](https://github.com/memeviod/bedrock-lab/releases)
+
+<sub>Un proyecto de MEMEVIOD · Con el apoyo de Zapia</sub>
+
+</div>
